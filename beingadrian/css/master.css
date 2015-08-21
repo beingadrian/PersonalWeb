@@ -119,8 +119,8 @@ html, body {
 	margin-top: 25px;
 	display: block;
 	color: white;
-	font-size: 12pt;
-	font-weight: 400;
+	font-size: 16pt;
+	font-weight: 300;
 }
 
 .tag-wrapper {
@@ -140,6 +140,46 @@ html, body {
 }
 
 /* Tablet */
+@media only screen and (max-height: 600px) {
+
+	#about-page .row {
+		width: 100%;
+	}
+
+	#profile-picture {
+		margin-bottom: 20px;
+		padding: 0;
+		height: 100px;
+		width: 100px;
+	}
+
+	#about-page h1 {
+		font-size: 32pt;
+	}
+
+	#description {
+		margin: 10px auto 0;
+		font-size: 12pt;
+		width: 60%;
+	}
+
+	.tag-wrapper {
+		margin-top: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		width: 90%;
+	}
+
+	.tag {
+		padding: 2px 10px;
+		margin: 5px;
+		font-size: 10pt;
+		font-weight: 400;
+	}
+
+}
+
 @media only screen and (max-width: 1024px) {
 
 	#about-page h1 {
@@ -155,15 +195,42 @@ html, body {
 /* Phone */
 @media only screen and (max-width: 640px) {
 
+	#about-page .row {
+		width: 100%;
+	}
+
 	#profile-picture {
-		margin-top: 100px;
+		margin-top: 0;
+		margin-bottom: 2%;
 		padding: 0;
 		height: 100px;
 		width: 100px;
 	}
 
 	#about-page h1 {
-		font-size: 24pt;
+		margin-top: 0;
+		font-size: 32pt;
+	}
+
+	#description {
+		margin: 10px auto 0;
+		font-size: 12pt;
+		width: 60%;
+	}
+
+	.tag-wrapper {
+		margin-top: 10%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		width: 90%;
+	}
+
+	.tag {
+		padding: 2px 10px;
+		margin: 5px;
+		font-size: 10pt;
+		font-weight: 400;
 	}
 
 }
@@ -176,8 +243,8 @@ html, body {
 	}
 
 	#profile-picture {
-		margin-top: 10px;
-		margin-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 2%;
 		padding: 0;
 		height: 100px;
 		width: 100px;
@@ -185,7 +252,6 @@ html, body {
 
 	#about-page h1 {
 		font-size: 20pt;
-		margin-top: 0px;
 	}
 
 	#description {
@@ -195,7 +261,7 @@ html, body {
 	}
 
 	.tag-wrapper {
-		margin-top: 20px;
+		margin-top: 10%;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0;
@@ -220,9 +286,11 @@ html, body {
 
 #projects-page .row {
 	padding-top: 80px;
-	padding-right: 100px;
-	padding-left: 100px;
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
 	padding-bottom: 120px;
+	text-align: center;
 }
 
 #projects-page h1 {
@@ -262,11 +330,6 @@ html, body {
 	background-size: cover;
 }
 
-@media only screen and (max-width: 480px) {
-
-
-}
-
 
 /* Photography page */
 
@@ -290,6 +353,22 @@ html, body {
 	color: white;
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#photography-page h1 {
+		padding-top: 130px;
+		font-size: 30pt;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+		color: white;
+	}
+
+	#photography-page h3 {
+		display: none;
+	}
+
 }
 
 /* Contact page */
@@ -337,4 +416,19 @@ html, body {
 #footer-pop-over-text {
 	color: #53BEE3;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#contact-typed {
+		font-size: 18pt;
+	}
+
+	.social-button {
+		margin: 40px 10px 0;
+		height: 35px;
+		width: 35px;
+
+	}
+
 }

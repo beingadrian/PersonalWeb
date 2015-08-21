@@ -52,12 +52,30 @@
     animation: blink 0.7s infinite;
 }
 
+/* Tablet */
+@media only screen and (max-height: 600px) {
+
+    .typed-cursor {
+        font-size: 38pt;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .typed-cursor {
+    	font-size: 45pt;
+    }
+
+}
+
 /* Phone small */
 @media only screen and (max-width: 480px) {
 
-	.typed-cursor {
-		font-size: 30pt;
-	}
+    .typed-cursor {
+    	font-size: 30pt;
+    }
+
 }
 
 @keyframes blink {
