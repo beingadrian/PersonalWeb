@@ -120,7 +120,7 @@ html, body {
 	margin-top: 25px;
 	display: block;
 	color: white;
-	font-size: 16pt;
+	font-size: 17pt;
 	font-weight: 300;
 }
 
@@ -191,6 +191,7 @@ html, body {
 		height: auto;
 		width: 60%;
 	}
+
 }
 
 /* Phone */
@@ -387,7 +388,6 @@ html, body {
 	float: left;
 	width: 168px;
 	height: 168px;
-	background-color: grey;
 	overflow: hidden;
 }
 

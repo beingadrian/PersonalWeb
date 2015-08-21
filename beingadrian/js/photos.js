@@ -12,6 +12,9 @@ var photosArray = [
     "ferris-wheel-landscape",
     "green-smoke",
     "marinabay-rose",
+    "golden-gate",
+    "plants-golden-gate",
+    "natural-museum",
     "observing-the-penguins",
     "oxford-street",
     "perspective-trees",
@@ -31,7 +34,7 @@ var photosArray = [
 
 function createPhotoDiv(divId) {
 
-    var div = "<div class=\"photo-thumbnail zeroed\"><a href=\"assets/photos/" + divId + ".jpg" + "\"><div id=\"" + divId + "\" class=\"thumbnail-container zeroed horizontally-centered\"></div></a></div>";
+    var div = "<div class=\"photo-thumbnail zeroed\"><a href=\"assets/photos/" + divId + ".jpg" + "\"><div id=\"" + divId + "\" class=\"thumbnail-container zeroed horizontally-centered hideme\"></div></a></div>";
 
     $("#photos-wrapper").append(div)
 
