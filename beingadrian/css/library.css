@@ -1,0 +1,79 @@
+/* LIBRARY.CSS */
+
+.zeroed {
+    margin: 0;
+    padding: 0;
+}
+
+.full-height {
+	min-height: 100%;
+	max-height: 100%;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.dead-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.horizontally-centered {
+	position: relative;
+	margin: 0 auto;
+}
+
+.relative {
+	position: relative;
+}
+
+/* Hideme */
+.hideme {
+    opacity: 0;
+}
+
+.hideme-delayed {
+    opacity: 0;
+}
+
+/* Typed.js */
+
+.typed-cursor {
+	font-size: 70pt;
+	color: #53BEE3;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+/* Phone small */
+@media only screen and (max-width: 480px) {
+
+	.typed-cursor {
+		font-size: 30pt;
+	}
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

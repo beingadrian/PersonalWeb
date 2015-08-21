@@ -1,0 +1,340 @@
+
+@import url("animations.css");
+@import url("library.css");
+@import url("card.css");
+
+/* MASTER.CSS */
+
+html, body {
+	height:100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Landing page */
+
+#landing-page {
+	background-color: white;
+}
+
+#landing-page h1 {
+	display: inline;
+	font-size: 70pt;
+}
+
+#landing-page h2 {
+	font-size: 18pt;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #aaa;
+}
+
+#down-arrow {
+	position: absolute;
+	width: 60px;
+	margin: 0;
+	left: 50%;
+	bottom: 5%;
+	cursor: pointer;
+	transition: bottom 0.5s;
+	/* center anchor point */
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+}
+
+#down-arrow:hover {
+	bottom: 4%;
+	transition: bottom 0.5s;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+
+	#landing-page h1 {
+		font-size: 60pt;
+	}
+
+}
+
+/* Phone */
+@media only screen and (max-width: 640px) {
+
+	#landing-page h1 {
+		font-size: 40pt;
+	}
+
+	#landing-page h2 {
+		font-size: 14pt;
+	}
+
+}
+
+/* Phone small */
+@media only screen and (max-width: 480px) {
+
+	#landing-page h1 {
+		font-size: 30pt;
+	}
+
+	#landing-page h2 {
+		font-size: 10pt;
+	}
+
+}
+
+
+/* About page */
+
+#about-page {
+	background-color: #252525;
+}
+
+#about-page .row {
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#profile-picture {
+	display: block;
+	height: 150px;
+	width: 150px;
+	background-image: url("../assets/images/prof-pic.jpg");
+	background-size: cover;
+	border-radius: 100%;
+}
+
+#about-page h1 {
+	margin-top: 40px;
+	display: inline;
+	color: white;
+	font-size: 40pt;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+#description {
+	margin-top: 25px;
+	display: block;
+	color: white;
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+.tag-wrapper {
+	margin-top: 80px;
+}
+
+.tag {
+	display: inline-block;
+	padding: 2px 10px;
+	margin: 7px;
+	border-radius: 6px;
+	background-color: #3D3D3D;
+	font-size: 12pt;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: #53BEE3;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+
+	#about-page h1 {
+		font-size: 30pt;
+	}
+
+	#about-page .row {
+		height: auto;
+		width: 60%;
+	}
+}
+
+/* Phone */
+@media only screen and (max-width: 640px) {
+
+	#profile-picture {
+		margin-top: 100px;
+		padding: 0;
+		height: 100px;
+		width: 100px;
+	}
+
+	#about-page h1 {
+		font-size: 24pt;
+	}
+
+}
+
+/* Phone small */
+@media only screen and (max-width: 480px) {
+
+	#about-page .row {
+		width: 100%;
+	}
+
+	#profile-picture {
+		margin-top: 10px;
+		margin-bottom: 0;
+		padding: 0;
+		height: 100px;
+		width: 100px;
+	}
+
+	#about-page h1 {
+		font-size: 20pt;
+		margin-top: 0px;
+	}
+
+	#description {
+		margin: 5px auto 0;
+		font-size: 10pt;
+		width: 50%;
+	}
+
+	.tag-wrapper {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		width: 90%;
+	}
+
+	.tag {
+		padding: 2px 10px;
+		margin: 5px;
+		font-size: 10pt;
+		font-weight: 400;
+	}
+
+}
+
+
+/* Projects page */
+
+#projects-page {
+	background-color: #efefef;
+}
+
+#projects-page .row {
+	padding-top: 80px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-bottom: 120px;
+}
+
+#projects-page h1 {
+	padding-top: 130px;
+	font-size: 40pt;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+#dreaming-pete .card-image {
+	background-image: url("../assets/images/bg-dreaming-pete.png");
+	background-size: cover;
+}
+
+#bounzy .card-image {
+	background-image: url("../assets/images/bg-bounzy.jpg");
+	background-size: cover;
+}
+
+#menerva .card-image {
+	background-image: url("../assets/images/bg-menerva.png");
+	background-size: cover;
+}
+
+#impact .card-image {
+	background-image: url("../assets/images/bg-impact.jpg");
+	background-size: cover;
+}
+
+#yearbook .card-image {
+	background-image: url("../assets/images/bg-yearbook.png");
+	background-size: cover;
+}
+
+#empty .card-image {
+	background-image: url("../assets/images/bg-empty.png");
+	background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+
+/* Photography page */
+
+#photography-page {
+	background-color: #252525;
+}
+
+#photography-page h1 {
+	padding-top: 130px;
+	font-size: 40pt;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	color: white;
+}
+
+#photography-page h3 {
+	padding-top: 40px;
+	font-size: 14pt;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	color: white;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* Contact page */
+
+#contact-page {
+	background-color: white;
+	text-align: center;
+}
+
+#contact-page .row {
+	width: 100%;
+}
+
+#contact-typed {
+	display: inline;
+	font-size: 50pt;
+}
+
+#social-wrapper {
+	position: relative;
+}
+
+.social-button {
+	margin: 100px 30px 0;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	transition: -webkit-transform 0.5s;
+}
+
+.social-button:hover {
+	transform: scale(1.5);
+	-webkit-transform: scale(1.2);
+	cursor: pointer;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	font-size: 8pt;
+	letter-spacing: 0.5px;
+}
+
+#footer-pop-over-text {
+	color: #53BEE3;
+	cursor: pointer;
+}
