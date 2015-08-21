@@ -27,6 +27,7 @@ $(function() {
     });
 });
 
+
 // Pop-over
 
 $(document).ready(function(){
@@ -35,6 +36,7 @@ $(document).ready(function(){
         html: 'true'
     });
 });
+
 
 // Hide-me
 
@@ -79,8 +81,6 @@ function showWhenVisible(className) {
 
     });
 };
-
-
 
 function typeWhenVisible(elementName) {
 
