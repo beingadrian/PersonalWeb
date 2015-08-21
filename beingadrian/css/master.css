@@ -2,6 +2,7 @@
 @import url("animations.css");
 @import url("library.css");
 @import url("card.css");
+@import url("photos.css");
 
 /* MASTER.CSS */
 
@@ -302,28 +303,29 @@ html, body {
 
 #dreaming-pete .card-image {
 	background-image: url("../assets/images/bg-dreaming-pete.png");
-	background-size: cover;
 }
 
 #bounzy .card-image {
 	background-image: url("../assets/images/bg-bounzy.jpg");
-	background-size: cover;
+}
+
+#project-homespeak .card-image {
+	background-image: url("../assets/images/bg-project-homespeak.png");
 }
 
 #menerva .card-image {
 	background-image: url("../assets/images/bg-menerva.png");
-	background-size: cover;
 }
 
 #impact .card-image {
 	background-image: url("../assets/images/bg-impact.jpg");
-	background-size: cover;
 }
 
 #yearbook .card-image {
 	background-image: url("../assets/images/bg-yearbook.png");
-	background-size: cover;
 }
+
+/* Set display to none when unecessary */
 
 #empty {
 	display: none;
@@ -331,20 +333,20 @@ html, body {
 
 #empty .card-image {
 	background-image: url("../assets/images/bg-empty.png");
-	background-size: cover;
 }
 
 
 /* Photography page */
 
 #photography-page {
+	height: auto;
 	background-color: #252525;
 }
 
 #photography-page h1 {
 	padding-top: 130px;
 	font-size: 40pt;
-	font-weight: 400;
+	font-weight: 300;
 	letter-spacing: 0.5px;
 	color: white;
 }
@@ -357,6 +359,12 @@ html, body {
 	color: white;
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+#photography-page .row {
+	margin-top: 80px;
+	padding-bottom: 150px;
+	max-width: 840px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -374,6 +382,28 @@ html, body {
 	}
 
 }
+
+.photo-thumbnail {
+	float: left;
+	width: 168px;
+	height: 168px;
+	background-color: grey;
+	overflow: hidden;
+}
+
+.thumbnail-container {
+	height: 100%;
+	width: 100%;
+	background-size: 160%;
+	background-position: center;
+	transition: background-size 0.5s;
+}
+
+.thumbnail-container:hover {
+	background-size: 200%;
+	cursor: pointer;
+}
+
 
 /* Contact page */
 
