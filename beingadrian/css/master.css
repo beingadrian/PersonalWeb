@@ -325,6 +325,10 @@ html, body {
 	background-size: cover;
 }
 
+#empty {
+	display: none;
+}
+
 #empty .card-image {
 	background-image: url("../assets/images/bg-empty.png");
 	background-size: cover;
