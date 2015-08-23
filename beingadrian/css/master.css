@@ -22,6 +22,11 @@ html, body {
 	width: 100vw;
 	background-color: #fff;
 	z-index: 1000;
+	text-align: center;
+}
+
+#filler {
+	visibility: hidden;
 }
 
 /* Landing page */

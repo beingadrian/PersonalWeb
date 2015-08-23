@@ -2,10 +2,25 @@
 
 // loading screen
 
+$(function() {
+	$(".container-full").css({"display": "none"});
+});
+
 $(window).load(function() {
 
+	$(".container-full").css({"display": "block"});
 	$("#loading-screen").remove();
 	showLandingTyped();
+
+	// Hide-me
+	showWhenVisible("hideme");
+	showWhenVisible("hideme-delayed");
+
+	var typedArray = ["about-typed", "contact-typed"];
+
+	for (var i in typedArray) {
+		typeWhenVisible(typedArray[i]);
+	};
 
 });
 
@@ -57,21 +72,7 @@ $(document).ready(function(){
     });
 });
 
-
-// Hide-me
-
-$(document).ready(function() {
-
-    showWhenVisible("hideme");
-    showWhenVisible("hideme-delayed");
-
-    var typedArray = ["about-typed", "contact-typed"];
-
-    for (var i in typedArray) {
-        typeWhenVisible(typedArray[i]);
-    };
-
-});
+// showWhenVisible
 
 function showWhenVisible(className) {
 
