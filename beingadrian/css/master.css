@@ -12,6 +12,18 @@ html, body {
 	margin: 0;
 }
 
+/* Loading screen */
+
+#loading-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #fff;
+	z-index: 1000;
+}
+
 /* Landing page */
 
 #landing-page {
@@ -73,6 +85,10 @@ html, body {
 
 /* Phone small */
 @media only screen and (max-width: 480px) {
+
+	#landing-page {
+		height: 100vh;
+	}
 
 	#landing-page h1 {
 		font-size: 30pt;
@@ -240,6 +256,10 @@ html, body {
 /* Phone small */
 @media only screen and (max-width: 480px) {
 
+	#about-page {
+		height: 100vh;
+	}
+
 	#about-page .row {
 		width: 100%;
 	}
@@ -305,7 +325,7 @@ html, body {
 @media only screen and (max-width: 480px) {
 
 	#projects-page {
-		height: 100%;
+		height: 100vh;
 	}
 
 	#projects-page h1 {
@@ -470,7 +490,7 @@ html, body {
 @media only screen and (max-width: 480px) {
 
 	#photography-page {
-		height: 100%;
+		height: 100vh;
 	}
 
 	#photography-page h1 {
@@ -563,6 +583,10 @@ html, body {
 }
 
 @media only screen and (max-width: 480px) {
+
+	#contact-page {
+		height: 100vh;
+	}
 
 	#contact-typed {
 		font-size: 18pt;

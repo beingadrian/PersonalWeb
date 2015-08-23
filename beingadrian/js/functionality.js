@@ -1,13 +1,33 @@
+// FUNCTIONALITY.JS
+
+// loading screen
+
+$(window).load(function() {
+
+	$("#loading-screen").remove();
+	showLandingTyped();
+
+});
+
+
 // Typed.js functionality
 
 $(function() {
+	$("#loading-typed").typed({
+		strings: [""],
+		showCursor: true
+	});
+});
+
+
+function showLandingTyped() {
 	$("#landing-typed").typed({
 		strings: ["@^300beingadrian"],
 		typeSpeed: 100,
 		startDelay: 300,
 		showCursor: true
 	});
-});
+};
 
 
 // Smooth scrolling
