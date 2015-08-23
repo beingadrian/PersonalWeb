@@ -30,15 +30,7 @@ var photosArray = [
     "yellow-greyscale1",
 ];
 
-// initiate function
-
-function createPhotoDiv(divId) {
-
-    var div = "<div class=\"photo-thumbnail zeroed\"><a href=\"assets/photos/" + divId + ".jpg" + "\"><div id=\"" + divId + "\" class=\"thumbnail-container zeroed horizontally-centered hideme\"></div></a></div>";
-
-    $("#photos-wrapper").append(div)
-
-}
+// main
 
 $(document).ready(function() {
 
@@ -46,4 +38,37 @@ $(document).ready(function() {
         createPhotoDiv(photosArray[i])
     };
 
+    // lightbox
+    $(".thumbnail-container").click(function() {
+        var elementId = this.id;
+        showLightboxWithId(elementId);
+    });
+
+    $("#close-btn").click(function() {
+        $(".lightbox-bg").css("visibility", "hidden");
+    });
+
 });
+
+
+// initiate function
+
+function createPhotoDiv(divId) {
+
+    var div =   "<div class=\"photo-thumbnail zeroed\">\
+                    <div id=\"" + divId + "\" class=\"thumbnail-container zeroed horizontally-centered hideme\"></div>\
+                </div>";
+
+    $("#photos-wrapper").append(div);
+
+}
+
+// lightbox
+
+function showLightboxWithId(id) {
+
+    var path = "assets/photos/" + id + ".jpg";
+    $(".lightbox-img").attr("src", path);
+    $(".lightbox-bg").css("visibility", "visible");
+
+};

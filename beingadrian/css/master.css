@@ -245,7 +245,7 @@ html, body {
 	}
 
 	#profile-picture {
-		margin-top: 0;
+		margin-top: 20px;
 		margin-bottom: 2%;
 		padding: 0;
 		height: 100px;
@@ -258,12 +258,12 @@ html, body {
 
 	#description {
 		margin: 5px auto 0;
-		font-size: 10pt;
+		font-size: 8pt;
 		width: 50%;
 	}
 
 	.tag-wrapper {
-		margin-top: 10%;
+		margin-top: 5%;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0;
@@ -271,9 +271,9 @@ html, body {
 	}
 
 	.tag {
-		padding: 2px 10px;
-		margin: 5px;
-		font-size: 10pt;
+		padding: 2px 6px;
+		margin: 3px;
+		font-size: 9pt;
 		font-weight: 400;
 	}
 
@@ -300,6 +300,30 @@ html, body {
 	font-size: 40pt;
 	font-weight: 400;
 	letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 480px) {
+
+	#projects-page {
+		height: 100%;
+	}
+
+	#projects-page h1 {
+		padding-top: 30px;
+		font-size: 40pt;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+
+	#projects-page .row {
+		padding-top: 30px;
+		max-width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 120px;
+		text-align: center;
+	}
+
 }
 
 #dreaming-pete .card-image {
@@ -368,22 +392,6 @@ html, body {
 	max-width: 840px;
 }
 
-@media only screen and (max-width: 480px) {
-
-	#photography-page h1 {
-		padding-top: 130px;
-		font-size: 30pt;
-		font-weight: 300;
-		letter-spacing: 0.5px;
-		color: white;
-	}
-
-	#photography-page h3 {
-		display: none;
-	}
-
-}
-
 .photo-thumbnail {
 	float: left;
 	width: 168px;
@@ -401,6 +409,108 @@ html, body {
 
 .thumbnail-container:hover {
 	background-size: 200%;
+	cursor: pointer;
+}
+
+
+/* Lightbox */
+
+.lightbox-bg {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: opacity 1s;
+}
+
+.lightbox-wrapper {
+	height: 50%;
+}
+
+.lightbox-img {
+	height: 100%;
+	box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.lightbox-bg {
+		display: none;
+	}
+
+	.thumbnail-container:hover {
+		cursor: auto;
+	}
+
+}
+
+@media only screen and (max-width: 840px) {
+
+	#photography-page .row {
+		margin-top: 80px;
+		padding-bottom: 150px;
+		max-width: 504px;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	#photography-page .row {
+		margin-top: 80px;
+		padding-bottom: 150px;
+		max-width: 336px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	#photography-page {
+		height: 100%;
+	}
+
+	#photography-page h1 {
+		padding-top: 80px;
+		font-size: 30pt;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+		color: white;
+	}
+
+	#photography-page h3 {
+		display: none;
+	}
+
+	#photography-page .row {
+		margin-top: 80px;
+		padding-bottom: 80px;
+		max-width: 250px;
+	}
+
+	.photo-thumbnail {
+		float: left;
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+	}
+
+}
+
+#close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	-webkit-transform: translate(50%, -50%);
+	width: 50px;
+	transition: width 0.5s;
+}
+
+#close-btn:hover {
+	width: 60px;
 	cursor: pointer;
 }
 

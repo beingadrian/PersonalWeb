@@ -12,16 +12,6 @@
 	position: relative;
 }
 
-@media only screen and (max-width: 480px) {
-
-    .card {
-        width: 200px;
-        height: 200px;
-        margin: 25px 0;
-    }
-
-}
-
 .card-image {
 	position: absolute;
 	width: 100%;
@@ -38,6 +28,20 @@
 	background-color: rgba(0, 0, 0, 0.95);
     opacity: 0;
     transition: opacity 0.5s;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .card {
+        width: 100px;
+        height: 100px;
+        margin: 15px 10px;
+    }
+
+    .card-overlay {
+        display: none;
+    }
+
 }
 
 /* Slide-up animation */
