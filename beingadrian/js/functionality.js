@@ -8,11 +8,12 @@ $(function() {
 
 $(window).load(function() {
 
+	// show from loading screen
 	$(".container-full").css({"display": "block"});
 	$("#loading-screen").remove();
 	showLandingTyped();
 
-	// Hide-me
+	// hide-me
 	showWhenVisible("hideme");
 	showWhenVisible("hideme-delayed");
 
@@ -25,29 +26,34 @@ $(window).load(function() {
 });
 
 
-// Typed.js functionality
+// typed.js functionality
 
 $(function() {
+
 	$("#loading-typed").typed({
 		strings: [""],
 		showCursor: true
 	});
+
 });
 
 
 function showLandingTyped() {
+
 	$("#landing-typed").typed({
 		strings: ["@^300beingadrian"],
 		typeSpeed: 100,
 		startDelay: 300,
 		showCursor: true
 	});
+
 };
 
 
 // Smooth scrolling
 
 $(function() {
+
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -60,16 +66,19 @@ $(function() {
             }
         }
     });
+
 });
 
 
 // Pop-over
 
 $(document).ready(function(){
+
     $('[data-toggle="footer-popover"]').popover({
         placement : 'top',
         html: 'true'
     });
+
 });
 
 // showWhenVisible
@@ -101,7 +110,10 @@ function showWhenVisible(className) {
         });
 
     });
+
 };
+
+// typeWhenVisible
 
 function typeWhenVisible(elementName) {
 
@@ -138,4 +150,5 @@ function typeWhenVisible(elementName) {
         });
 
     });
+
 };

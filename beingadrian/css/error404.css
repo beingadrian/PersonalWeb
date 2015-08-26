@@ -1,0 +1,74 @@
+/* ERROR404.CSS */
+
+@import url("library.css");
+@import url("animations.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100%;
+}
+
+#error404 {
+    display: inline-block;
+    color: #222;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 90pt;
+}
+
+#message {
+    color: #888;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+p {
+    padding-top: 20px;
+    color: #888;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+a {
+    color: #53BEE3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #53BEE3;
+    text-decoration: none;
+}
+
+.typed-cursor {
+	font-size: 120pt;
+	color: #53BEE3;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

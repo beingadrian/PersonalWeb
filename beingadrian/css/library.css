@@ -47,9 +47,9 @@
 	font-size: 70pt;
 	color: #53BEE3;
     opacity: 1;
+    animation: blink 0.7s infinite;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
 }
 
 /* Tablet */

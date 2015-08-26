@@ -32,7 +32,18 @@
 
 <body>
 
-	<!-- loading page -->
+	<!-- Google Analytics -->
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-66610035-1', 'auto');
+		  ga('send', 'pageview');
+	</script>
+
+	<!-- Poading page -->
 	<div id="loading-screen">
 		<div class="dead-center zeroed">
 			<h1 id="loading-typed" class="centered-text zeroed"></h1>
@@ -40,7 +51,8 @@
 		</div>
 	</div>
 
-	<!-- landing page -->
+
+	<!-- Landing page -->
 	<div id="landing-page" class="container-full full-height centered-text">
 		<div class="row dead-center zeroed">
 			<h1 id="landing-typed" class="zeroed"></h1>
@@ -75,7 +87,8 @@
 		</div>
 	</div>
 
-	<!-- projects page -->
+
+	<!-- Projects page -->
 	<div id="projects-page" class="container-full relative">
 		<h1 class="zeroed centered-text hideme">Projects</h1>
 		<div id="projects" class="row zeroed horizontally-centered">
@@ -214,10 +227,10 @@
 	</div>
 
 
-	<!-- photography page -->
+	<!-- Photography page -->
 	<div id="photography-page" class="container-full relative">
 		<h1 class="zeroed centered-text hideme">Photography</h1>
-		<h3 class="zeroed centered-text hideme">Occasionally, I also like taking pictures of the places I go to (as well as everything else).</h3>
+		<h3 class="zeroed centered-text hideme">Occasionally, I also like taking pictures of different places at different points in time.</h3>
 		<div id="photos-wrapper" class="row zeroed horizontally-centered relative">
 			<!-- Auto insert code -->
 		</div>
@@ -229,38 +242,27 @@
 	    </div>
 	</div>
 
-	<!-- contact page -->
+	<!-- Contact page -->
 	<div id="contact-page" class="container-full full-height relative">
 		<div class="row zeroed dead-center">
 			<h1 id="contact-typed" class="zeroed centered-text"></h1>
 			<div id="social-wrapper horizontally-centered centered-text">
-				<a href="http://uk.linkedin.com/in/adrianwisaksana/"><img class="social-button hideme-delayed" src="assets/vectors/linkedin-icon.svg"></a>
-				<a href="https://twitter.com/BeingAdrian"><img class="social-button hideme-delayed" src="assets/vectors/twitter-icon.svg"></a>
-				<a href="https://github.com/beingadrian"><img class="social-button hideme-delayed" src="assets/vectors/github-icon.svg"></a>
-				<a href="https://instagram.com/beingadrian/"><img class="social-button hideme-delayed" src="assets/vectors/instagram-icon.svg"></a>
+				<a href="http://uk.linkedin.com/in/adrianwisaksana/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/linkedin-icon.svg"></a>
+				<a href="https://twitter.com/BeingAdrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/twitter-icon.svg"></a>
+				<a href="https://github.com/beingadrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/github-icon.svg"></a>
+				<a href="https://instagram.com/beingadrian/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/instagram-icon.svg"></a>
 			</div>
 		</div>
-		<p id="footer" class="centered-text hideme">Copyright © 2015 Adrian Wisaksana. Designed and developed by Adrian Wisaksana. Attributions <span id="footer-pop-over-text" tabindex="0" data-trigger="focus" data-toggle="footer-popover" data-content='Social icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>'>here</span>.</p>
+		<p id="footer" class="centered-text hideme">Copyright © 2015 Adrian Wisaksana. Designed and developed by Adrian Wisaksana. Attributions <span id="footer-pop-over-text" tabindex="0" data-trigger="focus" data-toggle="footer-popover" data-content='Social icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Typed animation made possible with <a href="http://www.mattboldt.com/demos/typed-js/" target="_blank">Typed.js</a>.'>here</span>.</p>
 	</div>
 
 
-	<!-- scripts -->
+	<!-- Scripts -->
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/functionality.js"></script>
 	<script src="js/photos.js"></script>
-
-	<!-- Google Analytics -->
-	<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-66610035-1', 'auto');
-		  ga('send', 'pageview');
-	</script>
 
 </body>
 

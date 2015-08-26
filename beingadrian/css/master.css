@@ -529,7 +529,9 @@ html, body {
 	position: absolute;
 	top: 0;
 	right: 0;
+	transform: translate(50%, -50%);
 	-webkit-transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
 	width: 50px;
 	transition: width 0.5s;
 }
@@ -565,12 +567,15 @@ html, body {
 	display: inline-block;
 	height: 35px;
 	width: 35px;
+	transition: transform 0.5s;
 	transition: -webkit-transform 0.5s;
+	transition: -moz-transform 0.5s;
 }
 
 .social-button:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
 	cursor: pointer;
 }
 
