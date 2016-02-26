@@ -27,7 +27,6 @@
 </head>
 
 <body>
-
     <div class="dead-center centered-text">
         <h1 id="error404" class="horizontally-centered"></h1>
         <h2 id="message" class="horizontally-centered fade-in">Oops. File not found.</h2>

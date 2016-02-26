@@ -1,269 +1,142 @@
 <!DOCTYPE html>
+<html ng-app='beingWebApp'>
+	<head>
+		<meta charset="utf-8">
+		<title>Adrian Wisaksana</title>
+		<meta name="description" content="This is Adrian's home page. He is one of the Adrians out there with his own ways of enjoying the arts, music and sports; an Adrian living his life and exploring the fascinating wonders of this world.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/master.css">
 
-<html>
+		<!-- javascript -->
+		<script src="vendor/angular/angular.min.js"></script>
+		<script src="js/angular/app.js"></script>
+		<script src="js/angular/resources.js"></script>
+		<script src="js/angular/directives.js"></script>
+		<script src="js/angular/controller.js"></script>
 
-<head>
-	<meta charset="utf-8">
-	<title>Adrian Wisaksana</title>
-	<meta name="description" content="This is Adrian's home page. He is one of the Adrians out there with his own ways of enjoying the arts, music and sports; an Adrian living his life and exploring the fascinating wonders of this world.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/master.css">
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 
-	<!-- favicon -->
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-</head>
+		<!-- Google Analytics -->
+		<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-66610035-1', 'auto');
+				ga('send', 'pageview');
+		</script>
+	</head>
 
-<body>
+	<body ng-controller="MainController">
 
-	<!-- Google Analytics -->
-	<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-66610035-1', 'auto');
-		  ga('send', 'pageview');
-	</script>
-
-	<!-- Poading page -->
-	<div id="loading-screen">
-		<div class="dead-center zeroed">
-			<h1 id="loading-typed" class="centered-text zeroed"></h1>
-			<h2 id="filler" class="zeroed centered-text">Hi, my name is Adrian Wisaksana</h2>
-		</div>
-	</div>
-
-
-	<!-- Landing page -->
-	<div id="landing-page" class="container-full full-height centered-text">
-		<div class="row dead-center zeroed">
-			<h1 id="landing-typed" class="zeroed"></h1>
-			<h2 class="zeroed centered-text fade-in">Hi, my name is Adrian Wisaksana</h2>
-		</div>
-		<a href="#about-page">
-			<img id="down-arrow" class="fade-in" src="assets/vectors/down-arrow.svg" alt="down arrow">
-		</a>
-	</div>
-
-
-	<!-- about page -->
-	<div id="about-page" class="container-full full-height relative">
-		<div class="row dead-center centered-text">
-			<div id="profile-picture" class="horizontally-centered hideme"></div>
-			<h1 id="about-typed"></h1>
-			<p id="description" class="centered-text hideme">One of the Adrians out there with his own ways of enjoying the arts, music and sports; an Adrian living his life and exploring the fascinating wonders of this world.</p>
-			<div class="tag-wrapper centered-text hideme">
-				<p class="tag">#technology</p>
-				<p class="tag">#entrepreneurship</p>
-				<p class="tag">#iOS</p>
-				<p class="tag">#webdev</p>
-				<p class="tag">#gamedev</p>
-				<p class="tag">#design</p>
-				<p class="tag">#guitar</p>
-				<p class="tag">#photography</p>
-				<p class="tag">#swimming</p>
-				<p class="tag">#callofduty</p>
-				<p class="tag">#makeschool</p>
-				<p class="tag">#catapultideas</p>
+		<!-- Loading section -->
+		<div id="loading-screen">
+			<div class="dead-center zeroed">
+				<h1 id="loading-typed" class="centered-text zeroed"></h1>
+				<h2 id="filler" class="zeroed centered-text">Hi, my name is Adrian Wisaksana</h2>
 			</div>
 		</div>
-	</div>
 
-
-	<!-- Projects page -->
-	<div id="projects-page" class="container-full relative">
-		<h1 class="zeroed centered-text hideme">Projects</h1>
-		<div id="projects" class="row zeroed horizontally-centered">
-
-			<!-- Dreaming Pete -->
-			<a href="https://itunes.apple.com/us/app/dreaming-pete/id1028675342?ls=1&mt=8" target="_blank">
-				<div id="dreaming-pete" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Dreaming Pete</h2>
-							<p class="card-description centered-text zeroed">An iOS side-scroller adventure game with Limbo style graphics.<p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#cocos2d</p>
-								<p class="small-tag">#iOS</p>
-								<p class="small-tag">#swift</p>
-								<p class="small-tag">#illustrator</p>
-								<p class="small-tag">#makeschool</p>
-							</div>
-						</div>
-					</div>
-				</div>
+		<!-- Landing section -->
+		<div id="landing-page" class="container-full full-height centered-text">
+			<div class="row dead-center zeroed">
+				<h1 id="landing-typed" class="zeroed"></h1>
+				<h2 class="zeroed centered-text fade-in">Hi, my name is Adrian Wisaksana</h2>
+			</div>
+			<a href="#about-page">
+				<img id="down-arrow" class="fade-in" src="assets/vectors/down-arrow.svg" alt="down arrow">
 			</a>
+		</div>
 
-			<!-- Bounzy -->
-			<a href="http://apple.co/1LlsAWl" target="_blank">
-				<div id="bounzy" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Bounzy</h2>
-							<p class="card-description centered-text zeroed">A simple time-killer puzzle game built in 2 days.<p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#cocos2d</p>
-								<p class="small-tag">#iOS</p>
-								<p class="small-tag">#swift</p>
-								<p class="small-tag">#makeschool</p>
-							</div>
-						</div>
-					</div>
+		<!-- About section -->
+		<div id="about-page" class="container-full full-height relative">
+			<div class="row dead-center centered-text">
+				<div id="profile-picture" class="horizontally-centered hideme"></div>
+				<h1 id="about-typed"></h1>
+				<p id="description" class="centered-text hideme">One of the Adrians out there with his own ways of enjoying the arts, music and sports; an Adrian living his life and exploring the fascinating wonders of this world.</p>
+				<div class="tag-wrapper centered-text hideme">
+					<p class="tag">#technology</p>
+					<p class="tag">#entrepreneurship</p>
+					<p class="tag">#iOS</p>
+					<p class="tag">#webdev</p>
+					<p class="tag">#gamedev</p>
+					<p class="tag">#design</p>
+					<p class="tag">#guitar</p>
+					<p class="tag">#photography</p>
+					<p class="tag">#swimming</p>
+					<p class="tag">#callofduty</p>
+					<p class="tag">#makeschool</p>
+					<p class="tag">#catapultideas</p>
 				</div>
-			</a>
+			</div>
+		</div>
 
-			<!-- Project Homespeak -->
-			<a href="http://developerboards.att.lithium.com/t5/AT-T-Developer-Program-Blogs/Recap-AT-amp-T-Mobile-App-Hackathon-Bay-Area/ba-p/40390" target="_blank">
-				<div id="project-homespeak" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Project Homespeak</h2>
-							<p class="card-description centered-text zeroed">Imagine entering your home and have it tell you about your health performance that day.<p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#iOS</p>
-								<p class="small-tag">#UX</p>
-								<p class="small-tag">#swift</p>
-								<p class="small-tag">#HarmanAPI</p>
-								<p class="small-tag">#HealthKit</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-
-			<!-- Menerva -->
-			<a href="https://www.facebook.com/menervainternational" target="_blank">
-				<div id="menerva" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Menerva Advising</h2>
-							<p class="card-description centered-text zeroed">A business that helps people write their LinkedIn profiles.</p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#wordpress</p>
-								<p class="small-tag">#javascript</p>
-								<p class="small-tag">#jquery</p>
-								<p class="small-tag">#html</p>
-								<p class="small-tag">#css</p>
-								<p class="small-tag">#cio</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-
-			<!-- Impact Magazine -->
-			<a href="https://www.facebook.com/impactmagazine" target="_blank">
-				<div id="impact" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Impact Magazine</h2>
-							<p class="card-description centered-text zeroed">EF Torbay's international magazine featuring the students' events, thoughts and activities.</p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#photoshop</p>
-								<p class="small-tag">#indesign</p>
-								<p class="small-tag">#photography</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-
-			<!-- Yearbook -->
-			<a href="http://www.joomag.com/magazine/mag/0815203001432726860?feature=archive" target="_blank">
-				<div id="yearbook" class="card hideme">
-					<div class="card-image"></div>
-					<div class="card-overlay">
-						<div class="card-text-wrapper zeroed horizontally-centered">
-							<h2 class="zeroed centered-text">Yearbook</h2>
-							<p class="card-description centered-text zeroed">EF Academy Torbay's yearbook for the year 2015.<p>
-							<div class="small-tag-wrapper">
-								<p class="small-tag">#photoshop</p>
-								<p class="small-tag">#indesign</p>
-								<p class="small-tag">#photography</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-
-			<!-- Empty -->
-			<div id="empty" class="card hideme">
-				<div class="card-image"></div>
-				<div class="card-overlay">
-					<div class="card-text-wrapper zeroed horizontally-centered">
-						<h2 class="zeroed centered-text">More projects coming soon</h2>
-						<p class="card-description centered-text zeroed"></p>
-						<div class="small-tag-wrapper">
-							<!-- place tags here -->
-						</div>
+		<!-- Projects section -->
+		<div id="projects-page" class="container-full relative">
+			<h1 class="row dead-center center-text">Projects</h1>
+			<div id="projects" class="row zeroed horizontally-centered">
+				<div class="card hideme" ng-repeat="project in projects">
+					<div class="card-image">
+						
 					</div>
 				</div>
 			</div>
-
 		</div>
-	</div>
 
-
-	<!-- Photography page -->
-	<div id="photography-page" class="container-full relative">
-		<h1 class="zeroed centered-text hideme">Photography</h1>
-		<h3 class="zeroed centered-text hideme">Occasionally, I also like taking pictures of different places at different points in time.</h3>
-		<div id="photos-wrapper" class="row zeroed horizontally-centered relative">
-			<!-- Auto insert code -->
-		</div>
-		<div id="lightbox" class="lightbox-bg zeroed">
-            <div class="lightbox-wrapper dead-center">
-                <img class="lightbox-img" src="assets/photos/backshot.jpg">
-                <img id="close-btn" src="assets/vectors/close-btn.svg">
-            </div>
-	    </div>
-	</div>
-
-	<!-- Contact page -->
-	<div id="contact-page" class="container-full full-height relative">
-		<div class="row zeroed dead-center">
-			<h1 id="contact-typed" class="zeroed centered-text"></h1>
-			<div id="social-wrapper horizontally-centered centered-text">
-				<a href="http://uk.linkedin.com/in/adrianwisaksana/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/linkedin-icon.svg"></a>
-				<a href="https://twitter.com/BeingAdrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/twitter-icon.svg"></a>
-				<a href="https://github.com/beingadrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/github-icon.svg"></a>
-				<a href="https://instagram.com/beingadrian/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/instagram-icon.svg"></a>
+		<!-- Photography section -->
+		<div id="photography-page" class="container-full relative">
+			<h1 class="zeroed centered-text hideme">Photography</h1>
+			<h3 class="zeroed centered-text hideme">Occasionally, I also like taking pictures of different places at different points in time.</h3>
+			<div id="photos-wrapper" class="row zeroed horizontally-centered relative">
+				<!-- Auto insert code -->
 			</div>
+			<div id="lightbox" class="lightbox-bg zeroed">
+	            <div class="lightbox-wrapper dead-center">
+	                <img class="lightbox-img" src="assets/photos/backshot.jpg">
+	                <img id="close-btn" src="assets/vectors/close-btn.svg">
+	            </div>
+		    </div>
 		</div>
-		<p id="footer" class="centered-text hideme">Copyright © 2015 Adrian Wisaksana. Designed and developed by Adrian Wisaksana. Attributions <span id="footer-pop-over-text" tabindex="0" data-trigger="focus" data-toggle="footer-popover" data-content='Social icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Typed animation made possible with <a href="http://www.mattboldt.com/demos/typed-js/" target="_blank">Typed.js</a>.'>here</span>.</p>
-	</div>
 
+		<!-- Contact section -->
+		<div id="contact-page" class="container-full full-height relative">
+			<div class="row zeroed dead-center">
+				<h1 id="contact-typed" class="zeroed centered-text"></h1>
+				<div id="social-wrapper horizontally-centered centered-text">
+					<a href="http://uk.linkedin.com/in/adrianwisaksana/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/linkedin-icon.svg"></a>
+					<a href="https://twitter.com/BeingAdrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/twitter-icon.svg"></a>
+					<a href="https://github.com/beingadrian" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/github-icon.svg"></a>
+					<a href="https://instagram.com/beingadrian/" target="_blank"><img class="social-button hideme-delayed" src="assets/vectors/instagram-icon.svg"></a>
+				</div>
+			</div>
+			<p id="footer" class="centered-text hideme">Copyright © 2015 Adrian Wisaksana. Designed and developed by Adrian Wisaksana. Attributions <span id="footer-pop-over-text" tabindex="0" data-trigger="focus" data-toggle="footer-popover" data-content='Social icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Typed animation made possible with <a href="http://www.mattboldt.com/demos/typed-js/" target="_blank">Typed.js</a>.'>here</span>.</p>
+		</div>
 
-	<!-- Scripts -->
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/functionality.js"></script>
-	<script src="js/photos.js"></script>
+		<!-- Scripts -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/functionality.js"></script>
+		<script src="js/photos.js"></script>
 
-</body>
+	</body>
 
 </html>
