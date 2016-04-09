@@ -359,8 +359,8 @@ html, body {
 	background-image: url("../assets/images/bg-bounzy.jpg");
 }
 
-#project-homespeak .card-image {
-	background-image: url("../assets/images/bg-project-homespeak.png");
+#project-arthur .card-image {
+	background-image: url("../assets/images/bg-arthur.svg");
 }
 
 #menerva .card-image {
@@ -371,8 +371,8 @@ html, body {
 	background-image: url("../assets/images/bg-impact.jpg");
 }
 
-#yearbook .card-image {
-	background-image: url("../assets/images/bg-yearbook.png");
+#reveel .card-image {
+	background-image: url("../assets/images/bg-reveel.jpg");
 }
 
 /* Set display to none when unecessary */
